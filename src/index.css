@@ -1,13 +1,280 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+@media screen and (max-width: 1400px){
+  .container{
+    max-width: calc(100% - 180px);
+  }
+
+}
+@media screen and (max-width : 1200px){
+  .grid{
+    gap: 20px;
+  }
+  .home_data{
+    padding-right: 40px;
+
+  }
+  .home_title{
+    font-size: var(--big-font-size);
+  }
+
+  .home_description{
+    font-size: var(--small-font-size);
+  }
+  
+
+  .stats_title{
+    padding-left: 35px;
+
+  }
+  .stats_title::before{
+    width: 22px;
+  }
+
+  .skills_container{
+    row-gap: 32px;
+  }
+
+  .progress_circle{
+    width: 100px;
+    height: 100px;
+  }
+  .skills_title{
+    margin-top: 20px;
+  }
+
+  .resume_icon{
+    width: 36px;
+    height: 36px;
+    line-height: 38px;
+
+  }
+
+  .resume_item{
+    padding-left: 55px;
+  }
+
+  .portfolio_modal-content{
+    max-width: 600px;
+  }
+  .modal_close{
+    width: 40px;
+    height: 40px;
+  }
+  .form_input-group{
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 24px;
+  }
+  .form_input-group .form_input-div:last-child{
+    grid-column: 1/-1;
+  }
+  .form_input-div{
+    margin-bottom: 24px;
+  }
+
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media screen and (max-width : 1024px){
+  .container{
+    max-width: 720px;
+  }
+  .home{
+    padding: 20px;
+    grid-template-columns: 5fr 7fr;
+  }
+  .home_data{
+    padding-right: 0;
+  }
+
+  .section{
+    padding-block: 50px;
+  }
+
+  .section_title{
+    margin-bottom: 40px;
+  }
+
+  .about_container,
+  .resume_container,
+  .contact_container{
+    grid-template-columns: 1fr;
+  }
+
+  .about_container{
+    row-gap: 40px;
+  }
+
+  .subtitle_center{
+    margin-bottom: 45px;
+  }
+
+  .skills_container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .resume_container{
+    row-gap: 45px;
+  }
+
+  .resume_item:not(:last-child){
+    margin-bottom: 45px;
+  }
+
+  .seperator{
+    margin: 65px auto 50px;
+  }
+
+  .portfolio_container{
+    grid-template-columns: repeat(2 , 1fr);
+  }
+  .contact_container{
+    row-gap: 48px;
+  }
+}
+
+@media screen and (max-width : 768px){
+  .home{
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 10px;
+  }
+
+  .color_block{
+    display: none;
+  }
+
+  .home_img{
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    margin-top: auto;
+  }
+
+  .home_content{
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: auto;
+  }
+
+  .home_title{
+    padding-left:0 ;
+  }
+
+  .home_title::before{
+    all:unset;
+  }
+
+  .home_title span{
+    display: block;
+  }
+
+  .container{
+    max-width: 540px;
+  }
+
+  .portfolio_modal-content{
+    padding: 25px 20px;
+  }
+  .modal_close{
+    top: -9%;
+    right: 0;
+  }
+
+}
+
+@media screen and (max-width : 576px){
+  .nav_toggle{
+    top: 15px;
+    right: 15px;
+  }
+
+  .nav_link{
+    column-gap: 20px;
+  }
+
+  .nav_icon,
+  .nav_name{
+    font-size: var(--h3-font-size);
+  }
+
+  .skills_container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio_container{
+    grid-template-columns: 1fr;
+  }
+
+  .modal_list{
+    grid-template-columns: 1fr;
+  }
+
+  .modal_img{
+    height: 300px;
+  }
+
+  .form_input-group{
+    grid-template-columns: 1fr;
+  }
+
+  .theme_img{
+    width: 25px;
+  }
+
+  .style_switcher-toggle,
+  .theme_toggler{
+    width: 40px;
+    height: 40px;
+  }
+
+  .style_switcher-toggle{
+    top: 15%;
+  }
+
+  .theme_toggler{
+    bottom: 15%;
+  }
+
+  .style_switcher-close{
+    top: 5%;
+  }
+
+}
+
+@media screen and (max-width:450px) {
+  
+  .home_content{
+    margin-block: auto;
+    text-align: left;
+  }
+  .home_title{
+    font-size: var(--h1-font-size);
+  }
+  .home_description{
+    text-align: justify;
+  }
+  .info_title{
+    display: block;
+    margin-bottom: 4px;
+  }
+  .stats_box{
+    padding :15px 15px 25px 20px;
+  }
+  .stats{
+    grid-template-columns: 1fr;
+  }
+  .info_list{
+    grid-template-columns: 1fr;
+  }
+  
+}
+
+@media  screen and (max-width:350px) {
+  .home_title span{
+    display: inline;
+  }
+  
+
+  
 }
