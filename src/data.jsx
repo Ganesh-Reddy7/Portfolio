@@ -125,7 +125,7 @@ export const stats =[
     },
     {
         id: 4,
-        no:'0.25+',
+        no:'0.6',
         title:'Internship <br /> Experience',
     }
 ];
@@ -143,9 +143,9 @@ export const resume1 = [
         id: 2,
         category:'experience',
         icon:<FaBriefcase />,
-        year:'JULY-SEPTEMBER 2023',
-        title:'Data Science Intern <span> YBI Foundation </span>',
-        desc:'During This Internship I learned how to build prective models and classification models to achieve accurate results. ',
+        year:'JANUARY-PRESENT 2024',
+        title:'AE Full Stack Developer Intern <span> Vassar Labs </span>',
+        desc:'During This Internship I learned how to build a website and how to use technologies.',
     },
     {
         id: 3,
@@ -162,7 +162,7 @@ export const resume1 = [
         icon:<FaGraduationCap/>,
         year:'2020 - 2024',
         title:'Bachelors Degree <span>RGUKT Ongole</span>',
-        desc:'Currenty I am an udergraduate with  CGPA 9.5 upto 3rd year in the stream of computer Science and Engineering.',
+        desc:'I have Graduated from Rajiv Gandhi University of knowledge and technologies Ongole with CGPA 9.3 in the stream of computer Science and Engineering.',
     },
     {
         id: 5,
@@ -244,6 +244,31 @@ export const skill = [
         id: 12,
         title:'Flutter',
         percentage:'15',
+    },
+    {
+        id: 13,
+        title:'SpringBoot',
+        percentage:'25',
+    },
+    {
+        id: 14,
+        title:'GeoServer',
+        percentage:'40',
+    },
+    {
+        id: 15,
+        title:'Cassandra',
+        percentage:'45',
+    },
+    {
+        id: 16,
+        title:'Postgres',
+        percentage:'40',
+    },
+    {
+        id: 17,
+        title:'Angular',
+        percentage:'30',
     },
 
 ];
